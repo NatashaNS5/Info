@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using Info.Data;
 
@@ -19,7 +20,8 @@ namespace Info
             {
                 List<string> auditoriums = context.Auditoriums
                     .Where(a => a.Floor == 5)
-                    .OrderBy(a => a.Name)
+                    .ToList()
+                    .OrderBy(a => int.Parse(a.Name.Split(" - ")[0]))
                     .Select(a => a.Name)
                     .ToList();
                 AuditoriumsListBox.ItemsSource = auditoriums;
