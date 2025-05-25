@@ -1,0 +1,17 @@
+﻿<Window x:Class="Info.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Info"
+        mc:Ignorable="d"
+    Title="Аудитории 5-й этаж (27 корпус МПК ИДО)" Height="350" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Список аудиторий на 5-м этаже:" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+        <ListBox Grid.Row="1" x:Name="AuditoriumsListBox" FontSize="14"/>
+    </Grid>
+</Window>
