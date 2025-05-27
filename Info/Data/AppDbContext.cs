@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Info.Models;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
 
 namespace Info.Data
 {
@@ -14,7 +15,7 @@ namespace Info.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbPath = @"C:\Users\USER\source\repos\Info\Info\auditoriums.db"; 
+            string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "auditoriums.db");
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
         }
     }

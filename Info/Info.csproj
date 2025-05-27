@@ -33,4 +33,10 @@
     <Resource Include="Images\MRSU_dark_bg_ru_short_bw.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="auditoriums.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
