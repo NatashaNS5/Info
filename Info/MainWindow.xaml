@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Margin="0,10,0,10" HorizontalAlignment="Center">
-            <Image Height="75" Width="242" Source="C:\Users\USER\source\repos\Info\Info\Images\MRSU_dark_bg_ru_short_bw.png" Margin="0,0,0,10"/>
+            <Image Height="75" Width="242" Source="\Images\MRSU_dark_bg_ru_short_bw.png" Margin="0,0,0,10"/>
             <TextBlock Text="Список аудиторий на 5-м этаже:" FontSize="16" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </StackPanel>
 
