@@ -15,8 +15,7 @@ namespace Info.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "auditoriums.db");
-            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+            optionsBuilder.UseSqlite($"Data Source=auditoriums.db");
         }
     }
 }
